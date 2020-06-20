@@ -4,6 +4,17 @@ from flask import Flask
 from flaskignore import FLASK_IGNORE
 
 
+app = Flask(__name__)
+
+@app.route('/')
+def directory_contents():
+  return ','.join( list_dir_recursive('.') )
+
+@app.route('/<path:subpath>')
+def directory_contents_path(subpath):
+  return ','.join( list_dir_recursive(subpath) )
+
+
 def list_dir_recursive(directory):
   directory_contents = os.listdir(directory)
 
@@ -22,14 +33,4 @@ def list_dir_recursive(directory):
 
 
 if __name__ == '__main__':
-  app = Flask(__name__)
-
-  @app.route('/')
-  def directory_contents():
-    return ','.join( list_dir_recursive('.') )
-
-  @app.route('/<path:subpath>')
-  def directory_contents_path(subpath):
-    return ','.join( list_dir_recursive(subpath) )
-
   app.run(host='0.0.0.0');
