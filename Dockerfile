@@ -6,6 +6,5 @@ RUN     apt install -y vim
 WORKDIR /home/flask
 
 COPY    flask_webserver.py /home/flask/
-COPY    run-flask.sh /home/flask/
 
-CMD     ./run-flask.sh
+CMD     python3 flask_webserver.py

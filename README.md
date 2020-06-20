@@ -4,6 +4,8 @@ I needed something like `tree` available at an HTTP endpoint.
 I wanted something simple to consume by other utilities.  
 Prettied-up html, links, etc, were not desirable.  
 
+`python3 flask-webserver.py`  
+
 Returns comma separated file paths recursively, relative to the path flask is run from.  
 Sub paths can be specified in the HTTP request.  
 
