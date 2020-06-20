@@ -1,5 +1,7 @@
 # flask-list-file-system
 
+![Build Status](https://github.com/JoshuaNeely/flask-list-file-system/workflows/Python%20application/badge.svg)
+
 I needed something like `tree` available at an HTTP endpoint.  
 I wanted something simple to consume by other utilities.  
 Prettied-up html, links, etc, were not desirable.  
