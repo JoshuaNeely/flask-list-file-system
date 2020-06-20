@@ -8,6 +8,7 @@ Prettied-up html, links, etc, were not desirable.
 
 Returns comma separated file paths recursively, relative to the path flask is run from.  
 Sub paths can be specified in the HTTP request.  
+A `flaskignore.py` file is exposed to allow overriding/extending ignored files in a deployment.  
 
 Assume the following directory structure.
 ```
