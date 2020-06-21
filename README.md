@@ -1,6 +1,7 @@
 # flask-list-file-system
 
 ![pytest](https://github.com/JoshuaNeely/flask-list-file-system/workflows/pytest/badge.svg)
+![docker-image-publish](https://github.com/JoshuaNeely/flask-list-file-system/workflows/docker-image-publish/badge.svg)
 
 I needed something like `tree` available at an HTTP endpoint.  
 I wanted something simple to consume by other utilities.  
