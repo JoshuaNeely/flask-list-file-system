@@ -1,7 +1,9 @@
 # flask-list-file-system
 
-![pytest](https://github.com/JoshuaNeely/flask-list-file-system/workflows/pytest/badge.svg)
-![docker-image-publish](https://github.com/JoshuaNeely/flask-list-file-system/workflows/docker-image-publish/badge.svg)
+[![pytest](https://github.com/JoshuaNeely/flask-list-file-system/workflows/pytest/badge.svg)](https://github.com/JoshuaNeely/flask-list-file-system/actions?query=workflow%3Apytest)
+[![docker-image-publish](https://github.com/JoshuaNeely/flask-list-file-system/workflows/docker-image-publish/badge.svg)](https://github.com/JoshuaNeely/flask-list-file-system/actions?query=workflow%3Adocker-image-publish)
+
+
 
 I needed something like `tree` available at an HTTP endpoint.  
 I wanted something simple to consume by other utilities.  
