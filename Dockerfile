@@ -1,11 +1,12 @@
-FROM    rackspacedot/python37
+FROM    faucet/python3
+# supports arm
+# alpine based
 
 RUN     python3 -m pip install flask
-RUN     apt install -y vim
-
-WORKDIR /home/flask
 
 COPY    flask_webserver.py /home/flask/
 COPY    flaskignore.py /home/flask/
+
+WORKDIR /home/flask
 
 CMD     python3 flask_webserver.py
