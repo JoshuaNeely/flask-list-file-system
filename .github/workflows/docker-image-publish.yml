@@ -24,7 +24,7 @@ jobs:
             id: buildx
             uses: crazy-max/ghaction-docker-buildx@v1
             with:
-                version: latest
+                buildx-version: latest
         -
             name: Build dockerfile (with push)
             run: |
@@ -32,4 +32,4 @@ jobs:
                 --platform=linux/amd64,linux/arm/v7,linux/arm64 \
                 --output "type=image,push=true" \
                 --file ./Dockerfile . \
-                --tag $(echo "${DOCKERHUB_USERNAME}" | tr '[:upper:]' '[:lower:]')/flask-list-file-system:latest
+                --tag ${DOCKERHUB_USERNAME}/flask-list-file-system:latest
